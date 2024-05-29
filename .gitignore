@@ -1,0 +1,15 @@
+# Ignorowanie plików wygenerowanych przez kompilatory
+*.o
+*.out
+*.exe
+
+# Ignorowanie plików wygenerowanych przez środowisko programistyczne
+.vscode/
+.idea/
+
+# Ignorowanie plików tymczasowych
+*.tmp
+*.temp
+
+# Ignorowanie katalogów wygenerowanych przez cmake
+build/
