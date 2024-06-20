@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\algebra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\fruchterman_reingold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\kamada_kawai.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\layout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\nodesoup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\algebra.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\fruchterman_reingold.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\kamada_kawai.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\src\layout.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\nodesoup\include\nodesoup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PROJECTS\tp_projekt_4\matplotplusplus\source\3rd_party\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C7DB9353-DCE0-3A7E-B4C6-1810398F7518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F0EACED8-A907-3515-9ADA-642FE1159E3B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

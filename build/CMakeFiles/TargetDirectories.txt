@@ -1,0 +1,15 @@
+D:/PROJECTS/tp_projekt_4/build/CMakeFiles/planar_quadrotor.dir
+D:/PROJECTS/tp_projekt_4/build/CMakeFiles/ALL_BUILD.dir
+D:/PROJECTS/tp_projekt_4/build/CMakeFiles/ZERO_CHECK.dir
+D:/PROJECTS/tp_projekt_4/build/matplotplusplus/CMakeFiles/ALL_BUILD.dir
+D:/PROJECTS/tp_projekt_4/build/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir
+D:/PROJECTS/tp_projekt_4/build/matplotplusplus/source/matplot/CMakeFiles/matplot.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/sdl_headers_copy.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/SDL2main.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/SDL2.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/SDL2-static.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/SDL2_test.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/uninstall.dir
+D:/PROJECTS/tp_projekt_4/build/SDL/CMakeFiles/ALL_BUILD.dir
+D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/CMakeFiles/SDL2_gfx.dir
+D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/CMakeFiles/ALL_BUILD.dir
