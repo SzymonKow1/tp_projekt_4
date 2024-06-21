@@ -4,6 +4,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 include(cmake/CPM.cmake)
 
+find_package(SDL2_mixer REQUIRED)
+
 add_subdirectory(matplotplusplus)
 add_subdirectory(SDL)
 add_subdirectory(SDL2_gfx)
@@ -29,5 +31,5 @@ if(TARGET SDL2::SDL2main)
     # It has an implicit dependency on SDL2 functions, so it MUST be added before SDL2::SDL2 (or SDL2::SDL2-static)
     target_link_libraries(planar_quadrotor SDL2::SDL2main)
 endif()
-target_link_libraries(planar_quadrotor SDL2::SDL2 SDL2_gfx Eigen matplot)
+target_link_libraries(planar_quadrotor SDL2::SDL2 SDL2_gfx Eigen matplot SDL2_mixer)
 target_include_directories(planar_quadrotor PRIVATE ${PROJECT_SOURCE_DIR})

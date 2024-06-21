@@ -26,4 +26,5 @@ public:
     void DoUpdateState(float dt);
     Eigen::VectorXf Update(Eigen::Vector2f &input, float dt);
     Eigen::VectorXf Update(float dt);
+    Eigen::Vector2f GetInput() {return this->input;};
 };

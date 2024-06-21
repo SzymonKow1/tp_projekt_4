@@ -1,0 +1,1152 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Wa9Bgn
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b987c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b987c.dir/build.make CMakeFiles/cmTC_b987c.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Wa9Bgn'
+Building C object CMakeFiles/cmTC_b987c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_b987c.dir/CheckFunctionExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Wa9Bgn/CheckFunctionExists.c
+Linking C executable cmTC_b987c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b987c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_b987c.dir/CheckFunctionExists.c.o -o cmTC_b987c 
+/usr/bin/ld: CMakeFiles/cmTC_b987c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_b987c.dir/build.make:99: cmTC_b987c] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Wa9Bgn'
+gmake: *** [Makefile:127: cmTC_b987c/fast] Błąd 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-h0Wb2f
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cb0ed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cb0ed.dir/build.make CMakeFiles/cmTC_cb0ed.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-h0Wb2f'
+Building C object CMakeFiles/cmTC_cb0ed.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_cb0ed.dir/CheckFunctionExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-h0Wb2f/CheckFunctionExists.c
+Linking C executable cmTC_cb0ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb0ed.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_cb0ed.dir/CheckFunctionExists.c.o -o cmTC_cb0ed  /usr/lib/x86_64-linux-gnu/libblas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_cb0ed.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_cb0ed.dir/build.make:100: cmTC_cb0ed] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-h0Wb2f'
+gmake: *** [Makefile:127: cmTC_cb0ed/fast] Błąd 2
+
+
+
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-zS8Jp4
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bfebb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bfebb.dir/build.make CMakeFiles/cmTC_bfebb.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-zS8Jp4'
+Building C object CMakeFiles/cmTC_bfebb.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos" -mpreferred-stack-boundary=2 -o CMakeFiles/cmTC_bfebb.dir/src.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-zS8Jp4/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+gmake[1]: *** [CMakeFiles/cmTC_bfebb.dir/build.make:78: CMakeFiles/cmTC_bfebb.dir/src.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-zS8Jp4'
+gmake: *** [Makefile:127: cmTC_bfebb/fast] Błąd 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hhgHCQ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b514/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b514.dir/build.make CMakeFiles/cmTC_4b514.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hhgHCQ'
+Building C object CMakeFiles/cmTC_4b514.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos" -maltivec -o CMakeFiles/cmTC_4b514.dir/src.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hhgHCQ/src.c
+cc: error: unrecognized command-line option ‘-maltivec’
+gmake[1]: *** [CMakeFiles/cmTC_4b514.dir/build.make:78: CMakeFiles/cmTC_4b514.dir/src.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hhgHCQ'
+gmake: *** [Makefile:127: cmTC_4b514/fast] Błąd 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-IXRcpC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f960f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f960f.dir/build.make CMakeFiles/cmTC_f960f.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-IXRcpC'
+Building C object CMakeFiles/cmTC_f960f.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos" -maltivec -o CMakeFiles/cmTC_f960f.dir/src.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-IXRcpC/src.c
+cc: error: unrecognized command-line option ‘-maltivec’
+gmake[1]: *** [CMakeFiles/cmTC_f960f.dir/build.make:78: CMakeFiles/cmTC_f960f.dir/src.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-IXRcpC'
+gmake: *** [Makefile:127: cmTC_f960f/fast] Błąd 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-BIGAkQ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4017/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b4017.dir/build.make CMakeFiles/cmTC_b4017.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-BIGAkQ'
+Building C object CMakeFiles/cmTC_b4017.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_b4017.dir/CheckIncludeFile.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-BIGAkQ/CheckIncludeFile.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-BIGAkQ/CheckIncludeFile.c:1:10: fatal error: libunwind.h: Nie ma takiego pliku ani katalogu
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b4017.dir/build.make:78: CMakeFiles/cmTC_b4017.dir/CheckIncludeFile.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-BIGAkQ'
+gmake: *** [Makefile:127: cmTC_b4017/fast] Błąd 2
+
+
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_beb08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_beb08.dir/build.make CMakeFiles/cmTC_beb08.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI'
+Building C object CMakeFiles/cmTC_beb08.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_beb08.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   14 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_beb08.dir/build.make:78: CMakeFiles/cmTC_beb08.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SO9IZI'
+gmake: *** [Makefile:127: cmTC_beb08/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e08f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e08f.dir/build.make CMakeFiles/cmTC_0e08f.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz'
+Building C object CMakeFiles/cmTC_0e08f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_0e08f.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   14 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_0e08f.dir/build.make:78: CMakeFiles/cmTC_0e08f.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-DyO3lz'
+gmake: *** [Makefile:127: cmTC_0e08f/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strrev exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66da0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66da0.dir/build.make CMakeFiles/cmTC_66da0.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0'
+Building C object CMakeFiles/cmTC_66da0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_66da0.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strrev))[argc];
+      |                   ^~~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_66da0.dir/build.make:78: CMakeFiles/cmTC_66da0.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-gfLvW0'
+gmake: *** [Makefile:127: cmTC_66da0/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strrev
+  return ((int*)(&_strrev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strupr exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3fca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3fca.dir/build.make CMakeFiles/cmTC_a3fca.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC'
+Building C object CMakeFiles/cmTC_a3fca.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_a3fca.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strupr))[argc];
+      |                   ^~~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_a3fca.dir/build.make:78: CMakeFiles/cmTC_a3fca.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Hf77XC'
+gmake: *** [Makefile:127: cmTC_a3fca/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strupr
+  return ((int*)(&_strupr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strlwr exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e1452/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e1452.dir/build.make CMakeFiles/cmTC_e1452.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL'
+Building C object CMakeFiles/cmTC_e1452.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_e1452.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strlwr))[argc];
+      |                   ^~~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e1452.dir/build.make:78: CMakeFiles/cmTC_e1452.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-vHEJqL'
+gmake: *** [Makefile:127: cmTC_e1452/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strlwr
+  return ((int*)(&_strlwr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_11e3d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11e3d.dir/build.make CMakeFiles/cmTC_11e3d.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz'
+Building C object CMakeFiles/cmTC_11e3d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_11e3d.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&itoa))[argc];
+      |                   ^~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_11e3d.dir/build.make:78: CMakeFiles/cmTC_11e3d.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-eFN5bz'
+gmake: *** [Makefile:127: cmTC_11e3d/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1edc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1edc.dir/build.make CMakeFiles/cmTC_c1edc.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI'
+Building C object CMakeFiles/cmTC_c1edc.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_c1edc.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ltoa))[argc];
+      |                   ^~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_c1edc.dir/build.make:78: CMakeFiles/cmTC_c1edc.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Q5ITdI'
+gmake: *** [Makefile:127: cmTC_c1edc/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7f6f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7f6f.dir/build.make CMakeFiles/cmTC_b7f6f.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB'
+Building C object CMakeFiles/cmTC_b7f6f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_b7f6f.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_uitoa))[argc];
+      |                   ^~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_b7f6f.dir/build.make:78: CMakeFiles/cmTC_b7f6f.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-RbJGwB'
+gmake: *** [Makefile:127: cmTC_b7f6f/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ultoa exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_87889/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87889.dir/build.make CMakeFiles/cmTC_87889.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ'
+Building C object CMakeFiles/cmTC_87889.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_87889.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ultoa))[argc];
+      |                   ^~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_87889.dir/build.make:78: CMakeFiles/cmTC_87889.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-TzzItQ'
+gmake: *** [Makefile:127: cmTC_87889/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ultoa
+  return ((int*)(&_ultoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_154c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_154c2.dir/build.make CMakeFiles/cmTC_154c2.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF'
+Building C object CMakeFiles/cmTC_154c2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_154c2.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_i64toa))[argc];
+      |                   ^~~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_154c2.dir/build.make:78: CMakeFiles/cmTC_154c2.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aKq0eF'
+gmake: *** [Makefile:127: cmTC_154c2/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ui64toa exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8400c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8400c.dir/build.make CMakeFiles/cmTC_8400c.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL'
+Building C object CMakeFiles/cmTC_8400c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_8400c.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ui64toa))[argc];
+      |                   ^~~~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_8400c.dir/build.make:78: CMakeFiles/cmTC_8400c.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kDVawL'
+gmake: *** [Makefile:127: cmTC_8400c/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ui64toa
+  return ((int*)(&_ui64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _stricmp exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_971c5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_971c5.dir/build.make CMakeFiles/cmTC_971c5.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D'
+Building C object CMakeFiles/cmTC_971c5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_971c5.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_stricmp))[argc];
+      |                   ^~~~~~~~
+      |                   strncmp
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_971c5.dir/build.make:78: CMakeFiles/cmTC_971c5.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-tTFl0D'
+gmake: *** [Makefile:127: cmTC_971c5/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stricmp
+  return ((int*)(&_stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strnicmp exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5c75/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d5c75.dir/build.make CMakeFiles/cmTC_d5c75.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK'
+Building C object CMakeFiles/cmTC_d5c75.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_d5c75.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_strnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   strncmp
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_d5c75.dir/build.make:78: CMakeFiles/cmTC_d5c75.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-5nlXfK'
+gmake: *** [Makefile:127: cmTC_d5c75/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strnicmp
+  return ((int*)(&_strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsdup exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5f49c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5f49c.dir/build.make CMakeFiles/cmTC_5f49c.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p'
+Building C object CMakeFiles/cmTC_5f49c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_5f49c.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p/CheckSymbolExists.c:14:19: error: ‘_wcsdup’ undeclared (first use in this function); did you mean ‘wcsdup’?
+   14 |   return ((int*)(&_wcsdup))[argc];
+      |                   ^~~~~~~
+      |                   wcsdup
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_5f49c.dir/build.make:78: CMakeFiles/cmTC_5f49c.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D7ga1p'
+gmake: *** [Makefile:127: cmTC_5f49c/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsdup
+  return ((int*)(&_wcsdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_caf62/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_caf62.dir/build.make CMakeFiles/cmTC_caf62.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa'
+Building C object CMakeFiles/cmTC_caf62.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_caf62.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
+   14 |   return ((int*)(&wcslcat))[argc];
+      |                   ^~~~~~~
+      |                   wcsncat
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_caf62.dir/build.make:78: CMakeFiles/cmTC_caf62.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-100xwa'
+gmake: *** [Makefile:127: cmTC_caf62/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7dfc1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7dfc1.dir/build.make CMakeFiles/cmTC_7dfc1.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje'
+Building C object CMakeFiles/cmTC_7dfc1.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_7dfc1.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
+   14 |   return ((int*)(&wcslcpy))[argc];
+      |                   ^~~~~~~
+      |                   wcsncpy
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_7dfc1.dir/build.make:78: CMakeFiles/cmTC_7dfc1.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-xLEzje'
+gmake: *** [Makefile:127: cmTC_7dfc1/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsicmp exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4cdbd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4cdbd.dir/build.make CMakeFiles/cmTC_4cdbd.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk'
+Building C object CMakeFiles/cmTC_4cdbd.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_4cdbd.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsicmp))[argc];
+      |                   ^~~~~~~~
+      |                   wcsncmp
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_4cdbd.dir/build.make:78: CMakeFiles/cmTC_4cdbd.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-SuZybk'
+gmake: *** [Makefile:127: cmTC_4cdbd/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsicmp
+  return ((int*)(&_wcsicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsnicmp exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e3d3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e3d3.dir/build.make CMakeFiles/cmTC_5e3d3.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv'
+Building C object CMakeFiles/cmTC_5e3d3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_5e3d3.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   wcsncmp
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_5e3d3.dir/build.make:78: CMakeFiles/cmTC_5e3d3.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-D9v8Mv'
+gmake: *** [Makefile:127: cmTC_5e3d3/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsnicmp
+  return ((int*)(&_wcsnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fopen64 exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c2977/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c2977.dir/build.make CMakeFiles/cmTC_c2977.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH'
+Building C object CMakeFiles/cmTC_c2977.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_c2977.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH/CheckSymbolExists.c:14:19: error: ‘fopen64’ undeclared (first use in this function); did you mean ‘fopen’?
+   14 |   return ((int*)(&fopen64))[argc];
+      |                   ^~~~~~~
+      |                   fopen
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_c2977.dir/build.make:78: CMakeFiles/cmTC_c2977.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-ukJYtH'
+gmake: *** [Makefile:127: cmTC_c2977/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fopen64
+  return ((int*)(&fopen64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fseeko64 exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f7469/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f7469.dir/build.make CMakeFiles/cmTC_f7469.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0'
+Building C object CMakeFiles/cmTC_f7469.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_f7469.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0/CheckSymbolExists.c:14:19: error: ‘fseeko64’ undeclared (first use in this function); did you mean ‘fseeko’?
+   14 |   return ((int*)(&fseeko64))[argc];
+      |                   ^~~~~~~~
+      |                   fseeko
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_f7469.dir/build.make:78: CMakeFiles/cmTC_f7469.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-aYzlB0'
+gmake: *** [Makefile:127: cmTC_f7469/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko64
+  return ((int*)(&fseeko64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Sg7iGK
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_10bfe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_10bfe.dir/build.make CMakeFiles/cmTC_10bfe.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Sg7iGK'
+Building C object CMakeFiles/cmTC_10bfe.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_10bfe.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Sg7iGK/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Sg7iGK/CheckSymbolExists.c:3:10: fatal error: sys/sysctl.h: Nie ma takiego pliku ani katalogu
+    3 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_10bfe.dir/build.make:78: CMakeFiles/cmTC_10bfe.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Sg7iGK'
+gmake: *** [Makefile:127: cmTC_10bfe/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_74827/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_74827.dir/build.make CMakeFiles/cmTC_74827.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV'
+Building C object CMakeFiles/cmTC_74827.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_74827.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^~~~~~~~~~~~
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_74827.dir/build.make:78: CMakeFiles/cmTC_74827.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-lhmVaV'
+gmake: *** [Makefile:127: cmTC_74827/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-iOM7WY
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e64c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e64c2.dir/build.make CMakeFiles/cmTC_e64c2.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-iOM7WY'
+Building C object CMakeFiles/cmTC_e64c2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -o CMakeFiles/cmTC_e64c2.dir/CheckFunctionExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-iOM7WY/CheckFunctionExists.c
+Linking C executable cmTC_e64c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e64c2.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open CMakeFiles/cmTC_e64c2.dir/CheckFunctionExists.c.o -o cmTC_e64c2  -liconv 
+/usr/bin/ld: cannot find -liconv: Nie ma takiego pliku ani katalogu
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_e64c2.dir/build.make:99: cmTC_e64c2] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-iOM7WY'
+gmake: *** [Makefile:127: cmTC_e64c2/fast] Błąd 2
+
+
+
+Determining if the alloca exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e32c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e32c2.dir/build.make CMakeFiles/cmTC_e32c2.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW'
+Building C object CMakeFiles/cmTC_e32c2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_e32c2.dir/CheckSymbolExists.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW/CheckSymbolExists.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW/CheckSymbolExists.c: In function ‘main’:
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
+    8 |   return ((int*)(&alloca))[argc];
+      |                   ^~~~~~
+      |                   valloc
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e32c2.dir/build.make:78: CMakeFiles/cmTC_e32c2.dir/CheckSymbolExists.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-c7m4ZW'
+gmake: *** [Makefile:127: cmTC_e32c2/fast] Błąd 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file alsa/asoundlib.h exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kkgjMh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_46b00/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46b00.dir/build.make CMakeFiles/cmTC_46b00.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kkgjMh'
+Building C object CMakeFiles/cmTC_46b00.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_46b00.dir/CheckIncludeFile.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kkgjMh/CheckIncludeFile.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kkgjMh/CheckIncludeFile.c:1:10: fatal error: alsa/asoundlib.h: Nie ma takiego pliku ani katalogu
+    1 | #include <alsa/asoundlib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_46b00.dir/build.make:78: CMakeFiles/cmTC_46b00.dir/CheckIncludeFile.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-kkgjMh'
+gmake: *** [Makefile:127: cmTC_46b00/fast] Błąd 2
+
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-J3TCPv
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad501/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad501.dir/build.make CMakeFiles/cmTC_ad501.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-J3TCPv'
+Building C object CMakeFiles/cmTC_ad501.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_ad501.dir/CheckIncludeFile.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-J3TCPv/CheckIncludeFile.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-J3TCPv/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: Nie ma takiego pliku ani katalogu
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_ad501.dir/build.make:78: CMakeFiles/cmTC_ad501.dir/CheckIncludeFile.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-J3TCPv'
+gmake: *** [Makefile:127: cmTC_ad501/fast] Błąd 2
+
+
+
+Determining if the include file sndio.h exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-M2kqH5
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b0502/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b0502.dir/build.make CMakeFiles/cmTC_b0502.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-M2kqH5'
+Building C object CMakeFiles/cmTC_b0502.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_b0502.dir/CheckIncludeFile.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-M2kqH5/CheckIncludeFile.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-M2kqH5/CheckIncludeFile.c:1:10: fatal error: sndio.h: Nie ma takiego pliku ani katalogu
+    1 | #include <sndio.h>
+      |          ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b0502.dir/build.make:78: CMakeFiles/cmTC_b0502.dir/CheckIncludeFile.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-M2kqH5'
+gmake: *** [Makefile:127: cmTC_b0502/fast] Błąd 2
+
+
+
+Performing C SOURCE FILE Test HAVE_RPI failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-9kE2I3
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4a54d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4a54d.dir/build.make CMakeFiles/cmTC_4a54d.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-9kE2I3'
+Building C object CMakeFiles/cmTC_4a54d.dir/src.c.o
+/usr/bin/cc -DHAVE_RPI  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"   -I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux/  -L/opt/vc/lib -o CMakeFiles/cmTC_4a54d.dir/src.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-9kE2I3/src.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-9kE2I3/src.c:2:18: fatal error: bcm_host.h: Nie ma takiego pliku ani katalogu
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_4a54d.dir/build.make:78: CMakeFiles/cmTC_4a54d.dir/src.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-9kE2I3'
+gmake: *** [Makefile:127: cmTC_4a54d/fast] Błąd 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        #include <EGL/eglplatform.h>
+        int main(int argc, char **argv) {
+          EGL_DISPMANX_WINDOW_T window;
+          bcm_host_init();
+        }
+
+Performing C SOURCE FILE Test HAVE_VIVANTE_VDK failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Zvq8DT
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a90b7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a90b7.dir/build.make CMakeFiles/cmTC_a90b7.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Zvq8DT'
+Building C object CMakeFiles/cmTC_a90b7.dir/src.c.o
+/usr/bin/cc -DHAVE_VIVANTE_VDK  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_a90b7.dir/src.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Zvq8DT/src.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Zvq8DT/src.c:2:18: fatal error: gc_vdk.h: Nie ma takiego pliku ani katalogu
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a90b7.dir/build.make:78: CMakeFiles/cmTC_a90b7.dir/src.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-Zvq8DT'
+gmake: *** [Makefile:127: cmTC_a90b7/fast] Błąd 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hQLgMh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4c328/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4c328.dir/build.make CMakeFiles/cmTC_4c328.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hQLgMh'
+Building C object CMakeFiles/cmTC_4c328.dir/src.c.o
+/usr/bin/cc -DHAVE_VIVANTE_EGL_FB  -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_4c328.dir/src.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hQLgMh/src.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hQLgMh/src.c:4:18: fatal error: EGL/eglvivante.h: Nie ma takiego pliku ani katalogu
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_4c328.dir/build.make:78: CMakeFiles/cmTC_4c328.dir/src.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-hQLgMh'
+gmake: *** [Makefile:127: cmTC_4c328/fast] Błąd 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) { return 0; }
+
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-uzWEgx
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cb2ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cb2ce.dir/build.make CMakeFiles/cmTC_cb2ce.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-uzWEgx'
+Building C object CMakeFiles/cmTC_cb2ce.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -o CMakeFiles/cmTC_cb2ce.dir/CheckIncludeFile.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-uzWEgx/CheckIncludeFile.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-uzWEgx/CheckIncludeFile.c:1:10: fatal error: libudev.h: Nie ma takiego pliku ani katalogu
+    1 | #include <libudev.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_cb2ce.dir/build.make:78: CMakeFiles/cmTC_cb2ce.dir/CheckIncludeFile.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-uzWEgx'
+gmake: *** [Makefile:127: cmTC_cb2ce/fast] Błąd 2
+
+
+
+Determining if files pthread_np.h exist failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-pLlMXC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ce291/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce291.dir/build.make CMakeFiles/cmTC_ce291.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-pLlMXC'
+Building C object CMakeFiles/cmTC_ce291.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos"  -D_REENTRANT -pthread -o CMakeFiles/cmTC_ce291.dir/HAVE_PTHREAD_NP_H.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-pLlMXC/HAVE_PTHREAD_NP_H.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-pLlMXC/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: Nie ma takiego pliku ani katalogu
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_ce291.dir/build.make:78: CMakeFiles/cmTC_ce291.dir/HAVE_PTHREAD_NP_H.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-pLlMXC'
+gmake: *** [Makefile:127: cmTC_ce291/fast] Błąd 2
+
+
+Source:
+/* */
+#include <pthread_np.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-sytjvV
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7f8f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f8f3.dir/build.make CMakeFiles/cmTC_7f8f3.dir/build
+gmake[1]: Wejście do katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-sytjvV'
+Building C object CMakeFiles/cmTC_7f8f3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/kom0n/dev/tp_projekt_4/SDL/src/video/khronos" -DHAVE_LINUX_VERSION_H  -o CMakeFiles/cmTC_7f8f3.dir/CheckIncludeFile.c.o -c /home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-sytjvV/CheckIncludeFile.c
+/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-sytjvV/CheckIncludeFile.c:1:10: fatal error: samplerate.h: Nie ma takiego pliku ani katalogu
+    1 | #include <samplerate.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_7f8f3.dir/build.make:78: CMakeFiles/cmTC_7f8f3.dir/CheckIncludeFile.c.o] Błąd 1
+gmake[1]: Opuszczenie katalogu '/home/kom0n/dev/tp_projekt_4/build/CMakeFiles/CMakeScratch/TryCompile-sytjvV'
+gmake: *** [Makefile:127: cmTC_7f8f3/fast] Błąd 2
+
+
+

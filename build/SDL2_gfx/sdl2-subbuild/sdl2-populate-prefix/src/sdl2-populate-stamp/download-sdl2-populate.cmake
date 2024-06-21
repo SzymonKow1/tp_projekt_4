@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'")
+       file='/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'")
 
-  file("SHA256" "D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip" actual_value)
+  file("SHA256" "/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "7fae98ac4e7b39eb2511fc27c2e84b220ac69b5296ff41f833b967c891f9d2ac")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS "SHA256 hash of
-    D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip
+    /home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip
   does not match expected value
     expected: '7fae98ac4e7b39eb2511fc27c2e84b220ac69b5296ff41f833b967c891f9d2ac'
       actual: '${actual_value}'")
@@ -71,43 +71,51 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
+if("/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip" STREQUAL "")
+  message(FATAL_ERROR "LOCAL can't be empty")
+endif()
+
+if("https://github.com/libsdl-org/SDL/releases/download/release-2.24.2/SDL2-2.24.2.zip" STREQUAL "")
+  message(FATAL_ERROR "REMOTE can't be empty")
+endif()
+
+if(EXISTS "/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'
+  file='/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'
   SHA256='7fae98ac4e7b39eb2511fc27c2e84b220ac69b5296ff41f833b967c891f9d2ac'"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
+      file(REMOVE "/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'
+  file='/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
+    file(REMOVE "/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'
+   dst='/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip'
    timeout='none'
    inactivity timeout='none'"
 )
-set(download_retry_codes 7 6 8 15 28)
+set(download_retry_codes 7 6 8 15)
 set(skip_url_list)
 set(status_code)
 foreach(i RANGE ${retry_number})
   if(status_code IN_LIST download_retry_codes)
     sleep_before_download(${i})
   endif()
-  foreach(url IN ITEMS [====[https://github.com/libsdl-org/SDL/releases/download/release-2.24.2/SDL2-2.24.2.zip]====])
+  foreach(url https://github.com/libsdl-org/SDL/releases/download/release-2.24.2/SDL2-2.24.2.zip)
     if(NOT url IN_LIST skip_url_list)
       message(STATUS "Using src='${url}'")
 
@@ -118,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip"
+        "${url}" "/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -135,7 +143,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "D:/PROJECTS/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
+          file(REMOVE "/home/kom0n/dev/tp_projekt_4/build/SDL2_gfx/sdl2-subbuild/sdl2-populate-prefix/src/SDL2-2.24.2.zip")
         else()
           message(STATUS "Downloading... done")
           return()
