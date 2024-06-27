@@ -14,7 +14,8 @@
 
 ### Dopasowane wartości
 
-``` Q.diagonal() << 5e-3, 5e-3, 1e3, 2*5e-2, 5e-2, 1/M_PI;
+```
+Q.diagonal() << 5e-3, 5e-3, 1e3, 2*5e-2, 5e-2, 1/M_PI;
 R.row(0) << 3e1, 5;
 R.row(1) << 5, 3e1;
 ```
@@ -43,32 +44,35 @@ Pierwszy wiersz R:
 
 ## Animacja obrotu śmigieł
 
-``` SDL_Rect proppeler; # tworzenie obiektu
-    drawRect (&proppeler, x, y, 40, 4); # rysowanie prostokątu w funkcji
+```
+SDL_Rect proppeler; # tworzenie obiektu
+drawRect (&proppeler, x, y, 40, 4); # rysowanie prostokątu w funkcji
 
-    SDL_Surface* surface = SDL_CreateRGBSurface(0, 40, 4, 32, 0, 0, 0, 0); # tworzenie powierzchni o wymiarach prostokąta
-    SDL_FillRect(surface, nullptr, SDL_MapRGB(surface->format, 0, 100, 0)); # wypełnienie i kolor
-    
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(gRenderer.get(), surface); # tworzenie tekstury na bazie powierzchni
+SDL_Surface* surface = SDL_CreateRGBSurface(0, 40, 4, 32, 0, 0, 0, 0); # tworzenie powierzchni o wymiarach prostokąta
+SDL_FillRect(surface, nullptr, SDL_MapRGB(surface->format, 0, 100, 0)); # wypełnienie i kolor
 
-    rotation += 4; # zmiana kąta obrotu funckja wywoływana jest w pętli, zmienna rotation jest prywatnym członkiem klasy
+SDL_Texture* texture = SDL_CreateTextureFromSurface(gRenderer.get(), surface); # tworzenie tekstury na bazie powierzchni
 
-    SDL_RenderCopyEx(gRenderer.get(), texture, NULL, &proppeler, rotation, NULL, SDL_FLIP_NONE); # rysowanie
-    SDL_FreeSurface(surface); # zwolnienie pamięci
-    SDL_DestroyTexture(texture);
+rotation += 4; # zmiana kąta obrotu funckja wywoływana jest w pętli, zmienna rotation jest prywatnym członkiem klasy
+
+SDL_RenderCopyEx(gRenderer.get(), texture, NULL, &proppeler, rotation, NULL, SDL_FLIP_NONE); # rysowanie
+SDL_FreeSurface(surface); # zwolnienie pamięci
+SDL_DestroyTexture(texture);
 ```
 
 ## Dźwięk
 
-```Mix_Chunk* sound = Mix_LoadWAV("../PlanarQuadrotor/s.wav"); # wczytanie pliku dźwiękowego
-        if (sound == nullptr) {
-        std::cout << "Failed to load sound! SDL_mixer Error: " << Mix_GetError() << std::endl; # wykrywanie błędów
-        return 1;
-        }
-        int channel = Mix_PlayChannel(-1, sound, -1); # odtwarzanie dźwięku w nieskończonej pętli
+```
+Mix_Chunk* sound = Mix_LoadWAV("../PlanarQuadrotor/s.wav"); # wczytanie pliku dźwiękowego
+if (sound == nullptr) {
+std::cout << "Failed to load sound! SDL_mixer Error: " << Mix_GetError() << std::endl; # wykrywanie błędów
+return 1;
+}
+int channel = Mix_PlayChannel(-1, sound, -1); # odtwarzanie dźwięku w nieskończonej pętli
 ```
 
-```Mix_Volume(channel, (quadrotor.GetInput().norm())/ 2 * MIX_MAX_VOLUME); # zmiana dźwięku na podstawie wektora input
+```
+Mix_Volume(channel, (quadrotor.GetInput().norm())/ 2 * MIX_MAX_VOLUME); # zmiana dźwięku na podstawie wektora 
 ```
 
 ## Wygląd aplikacji
@@ -77,5 +81,5 @@ Pierwszy wiersz R:
 
 ## Projekt wykonali
 
-Szymon Kowalski 198055
+Szymon Kowalski 198055,
 Sebastaian Kuczera 198118
